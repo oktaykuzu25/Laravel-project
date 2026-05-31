@@ -14,6 +14,12 @@ class Task extends Model
         'description',
         'is_completed',
     ];
+
+    // DB'den 0/1 yerine gerçek true/false dönsün diye.
+    protected $casts = [
+        'is_completed' => 'boolean',
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
