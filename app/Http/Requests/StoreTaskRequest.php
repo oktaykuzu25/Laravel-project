@@ -26,9 +26,7 @@ class StoreTaskRequest extends FormRequest
             'title.required' => 'Görev başlığı zorunludur.',
             'title.string' => 'Görev başlığı metin olmalıdır.',
             'title.max' => 'Görev başlığı en fazla 255 karakter olabilir.',
-
             'description.string' => 'Açıklama metin olmalıdır.',
-
             'is_completed.boolean' => 'Tamamlanma durumu doğru veya yanlış olmalıdır.',
         ];
     }
